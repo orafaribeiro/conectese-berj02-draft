@@ -7,7 +7,6 @@ import { CreateCategoryDto } from './dto/create-category.dto';
 export class CategoriesController {
 
     constructor(private categoriesService: CategoriesService) {}
-
     
     @Get()
     async getAllCategories(): Promise<Category[]> {

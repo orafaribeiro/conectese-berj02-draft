@@ -14,7 +14,7 @@ import { AuthModule } from './auth/auth.module';
       port: 3306,
       username: 'user_berj02',
       password: 'user_berj02',
-      database: 'berj02',
+      database: 'berj_draft',
       autoLoadEntities: true,
       synchronize: true
     }),
