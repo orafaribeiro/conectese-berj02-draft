@@ -16,4 +16,7 @@ export class CreatePlaceDto {
     
     @IsNotEmpty({ message: 'O campo descrição é obrigatório' })
     description: string;
+
+    @IsNotEmpty({ message: 'A categoria é obrigatória' })
+    categoryId: string;
 }

@@ -16,7 +16,7 @@ export class PlacesRepository extends Repository<Place> {
     
     async createPlace(createPlaceDto: CreatePlaceDto): Promise<Place> {
 
-        const { name, site, address, image, ticket, description } = createPlaceDto;
+        const { name, site, address, image, ticket, description, categoryId } = createPlaceDto;
 
         const place = this.create({
             name,
@@ -25,7 +25,8 @@ export class PlacesRepository extends Repository<Place> {
             image,
             ticket,
             description,
-            status: PlaceStatus.ACTIVE
+            status: PlaceStatus.ACTIVE,
+            categoryId
         });
 
         await this.save(place);

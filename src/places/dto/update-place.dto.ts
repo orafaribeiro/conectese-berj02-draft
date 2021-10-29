@@ -1,4 +1,4 @@
-import { IsOptional, IsString } from "class-validator";
+import { IsArray, IsNumber, IsOptional, IsString } from "class-validator";
 
 export class UpdatePlaceDto {
     @IsOptional()
@@ -24,4 +24,8 @@ export class UpdatePlaceDto {
     @IsOptional()
     @IsString()
     description: string;
+
+    @IsOptional()
+    @IsArray()
+    categoryId: number;
 }

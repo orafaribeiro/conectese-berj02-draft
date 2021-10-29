@@ -26,4 +26,7 @@ export class Place {
     
     @Column()
     status: PlaceStatus;
+
+    @Column()
+    categoryId: string;
 }
